@@ -1,4 +1,16 @@
 {
   "name": "eslint-interative-monorepo-demo",
-  "packageManager": "yarn@4.9.1"
+  "packageManager": "yarn@4.9.1",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "eslint --flag unstable_config_lookup_from_file ./packages",
+    "lint-interactive": "eslint-interactive"
+  },
+  "devDependencies": {
+    "eslint": "^9.25.1",
+    "eslint-interactive": "^11.1.0"
+  }
 }
