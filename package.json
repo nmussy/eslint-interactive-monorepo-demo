@@ -11,6 +11,6 @@
   },
   "devDependencies": {
     "eslint": "^9.25.1",
-    "eslint-interactive": "^11.1.0"
+    "eslint-interactive": "../eslint-interactive"
   }
 }
