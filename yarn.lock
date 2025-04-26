@@ -23,21 +23,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint-interative-monorepo-demo/a@workspace:packages/a":
+"@eslint-interactive-monorepo-demo/a@workspace:packages/a":
   version: 0.0.0-use.local
-  resolution: "@eslint-interative-monorepo-demo/a@workspace:packages/a"
+  resolution: "@eslint-interactive-monorepo-demo/a@workspace:packages/a"
+  dependencies:
+    eslint: "npm:^9.25.1"
   languageName: unknown
   linkType: soft
 
-"@eslint-interative-monorepo-demo/b@workspace:packages/b":
+"@eslint-interactive-monorepo-demo/b@workspace:packages/b":
   version: 0.0.0-use.local
-  resolution: "@eslint-interative-monorepo-demo/b@workspace:packages/b"
+  resolution: "@eslint-interactive-monorepo-demo/b@workspace:packages/b"
+  dependencies:
+    eslint: "npm:^9.25.1"
   languageName: unknown
   linkType: soft
 
-"@eslint-interative-monorepo-demo/c@workspace:packages/c":
+"@eslint-interactive-monorepo-demo/c@workspace:packages/c":
   version: 0.0.0-use.local
-  resolution: "@eslint-interative-monorepo-demo/c@workspace:packages/c"
+  resolution: "@eslint-interactive-monorepo-demo/c@workspace:packages/c"
+  dependencies:
+    eslint: "npm:^9.25.1"
   languageName: unknown
   linkType: soft
 
@@ -457,9 +463,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-interactive@file:../eslint-interactive::locator=eslint-interative-monorepo-demo%40workspace%3A.":
+"eslint-interactive-monorepo-demo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "eslint-interactive-monorepo-demo@workspace:."
+  dependencies:
+    eslint: "npm:^9.25.1"
+    eslint-interactive: "file:../eslint-interactive-flags-support"
+  languageName: unknown
+  linkType: soft
+
+"eslint-interactive@file:../eslint-interactive-flags-support::locator=eslint-interactive-monorepo-demo%40workspace%3A.":
   version: 11.1.0
-  resolution: "eslint-interactive@file:../eslint-interactive#../eslint-interactive::hash=17d7ad&locator=eslint-interative-monorepo-demo%40workspace%3A."
+  resolution: "eslint-interactive@file:../eslint-interactive-flags-support#../eslint-interactive-flags-support::hash=d43d3e&locator=eslint-interactive-monorepo-demo%40workspace%3A."
   dependencies:
     boxen: "npm:^8.0.1"
     chalk: "npm:^5.3.0"
@@ -475,18 +490,9 @@ __metadata:
     eslint: ^8.45.0 || ^9.0.0
   bin:
     eslint-interactive: bin/eslint-interactive.js
-  checksum: 10c0/783c1394eb063fb9b52626ac1058409ff33f300e533f887e6d4e8a755cf5ae082708f15ed7dfec01b66598c1e5c91406f12a5e5a0b73c97b221b92ca1be57d9c
+  checksum: 10c0/dd83d004580fa98d71984c9ccd0a90080aa0b4e55a0d7a59cd9b1c7d9ea4f33eeec8f2dc30db57890c45faa5035f8e89330d7ce744f8cdbd2fd4cef0dbfebc02
   languageName: node
   linkType: hard
-
-"eslint-interative-monorepo-demo@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "eslint-interative-monorepo-demo@workspace:."
-  dependencies:
-    eslint: "npm:^9.25.1"
-    eslint-interactive: ../eslint-interactive
-  languageName: unknown
-  linkType: soft
 
 "eslint-scope@npm:^8.3.0":
   version: 8.3.0

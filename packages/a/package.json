@@ -1,5 +1,8 @@
 {
-  "name": "@eslint-interative-monorepo-demo/a",
+  "name": "@eslint-interactive-monorepo-demo/a",
   "packageManager": "yarn@4.9.1",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^9.25.1"
+  }
 }
