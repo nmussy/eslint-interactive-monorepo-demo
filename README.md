@@ -20,11 +20,11 @@ yarn install
 
 ```md
 yarn run eslint-interactive ./packages
-````
+```
 
 Output:
 
-````
+```
 ✔ Linting done.
 
 💚 No error found.
@@ -34,7 +34,7 @@ Output:
 
 ```md
 yarn run eslint-interactive  --flag unstable_config_lookup_from_file ./packages
-````
+```
 
 Output:
 
