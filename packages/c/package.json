@@ -1,0 +1,5 @@
+{
+  "name": "@eslint-interative-monorepo-demo/c",
+  "packageManager": "yarn@4.9.1",
+  "type": "module"
+}
